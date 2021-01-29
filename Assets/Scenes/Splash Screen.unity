@@ -233,7 +233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c190881df7e7a5640bebac180622f1f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 4
+  delay: 5
+  fadeOut: {fileID: 5160837921637498175, guid: b21869edf46abcb4caa73a98dfc2601c, type: 3}
+  fadeLoadDifference: 1.5
 --- !u!4 &675565192
 Transform:
   m_ObjectHideFlags: 0
@@ -325,7 +327,7 @@ GameObject:
   - component: {fileID: 1746774491}
   - component: {fileID: 1746774492}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Splash Video
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
