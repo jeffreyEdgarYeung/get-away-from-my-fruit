@@ -12,16 +12,19 @@ public class Health : MonoBehaviour
     [SerializeField] AudioClip[] hitSounds;
     [SerializeField] float hitVolume = 1f;
 
+    [Header("Death Effects")]
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float xAdjust = 0f;
+    [SerializeField] float yAdjust = 0f;
+
     // Cached Refs
     SpriteRenderer spriteRenderer;
-    AudioSource audioSource;
 
     float health;
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        audioSource = gameObject.GetComponent<AudioSource>();
         health = maxHealth;
     }
 
@@ -33,7 +36,7 @@ public class Health : MonoBehaviour
 
     public void HandleHit(float damage)
     {
-        PlayHitVFX();
+        PlayHitSFX();
         StartCoroutine(HitFlash());
         DealDamage(damage);        
     }
@@ -41,7 +44,11 @@ public class Health : MonoBehaviour
     public void DealDamage(float damage)
     {
         health -= damage;
-        if ( health <= 0) { Destroy(gameObject); }
+        if ( health <= 0) 
+        { 
+            Destroy(gameObject);
+            PlayDeathVFX();
+        }
     }
 
     private IEnumerator HitFlash()
@@ -51,12 +58,25 @@ public class Health : MonoBehaviour
         spriteRenderer.color = new Color(1,1,1,1);
     }
 
-    private void PlayHitVFX()
+    private void PlayHitSFX()
     {
         AudioSource.PlayClipAtPoint(
             hitSounds[Random.Range(0, hitSounds.Length)],
             Camera.main.transform.position,
             hitVolume
         );
+    }
+
+    private void PlayDeathVFX()
+    {
+        Vector3 dVFXPos = new Vector3(
+            transform.position.x + xAdjust,
+            transform.position.y + yAdjust,
+            transform.position.z
+        );
+
+        GameObject ghost = Instantiate( deathVFX, dVFXPos, Quaternion.identity);
+        Destroy(ghost, 3f);
+
     }
 }

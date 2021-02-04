@@ -149,3 +149,5 @@ MonoBehaviour:
   gun: {fileID: 124287693}
   projectile: {fileID: 846062021457634640, guid: 4b400871c0429514a8e8fd8441529aca,
     type: 3}
+  sfxVolume: 1
+  fireSFX: {fileID: 8300000, guid: 334f9936ecc0dce4485e08e3292ac165, type: 3}

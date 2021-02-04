@@ -164,6 +164,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: dd36eff33edaaf84491b9f910be7c803, type: 3}
   - {fileID: 8300000, guid: bf627e86ca56d8d468f321fc6b686cfe, type: 3}
   hitVolume: 0.125
+  deathVFX: {fileID: 2515642759820063143, guid: b3cfdc2ff38a5ec4d824ac46777ab31c,
+    type: 3}
+  xAdjust: 0.4
+  yAdjust: 0
 --- !u!82 &2114724678
 AudioSource:
   m_ObjectHideFlags: 0
