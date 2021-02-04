@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bobber : MonoBehaviour
 {
     [SerializeField] float floatStrength;
-    [SerializeField] float bobDelay = 0;
     Vector2 bobPosition;
     float originalY;
 
@@ -22,18 +21,5 @@ public class Bobber : MonoBehaviour
         bobPosition = transform.position;
         bobPosition.y = originalY + (Mathf.Sin(Time.time) * floatStrength);
         transform.position = bobPosition;
-    }
-  
-
-    IEnumerator Bob()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(Time.deltaTime);
-            bobPosition = transform.position;
-            bobPosition.y = originalY + (Mathf.Sin(Time.time) * floatStrength);
-            transform.position = bobPosition;
-        }
-
     }
 }
