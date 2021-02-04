@@ -168,6 +168,8 @@ MonoBehaviour:
     type: 3}
   xAdjust: 0.4
   yAdjust: 0
+  deathSound: {fileID: 8300000, guid: bcdec850eb8903d4e8d2066d9cfa60e2, type: 3}
+  deathVolume: 0.2
 --- !u!82 &2114724678
 AudioSource:
   m_ObjectHideFlags: 0

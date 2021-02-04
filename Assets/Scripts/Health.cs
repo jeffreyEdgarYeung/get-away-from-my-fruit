@@ -16,6 +16,8 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject deathVFX;
     [SerializeField] float xAdjust = 0f;
     [SerializeField] float yAdjust = 0f;
+    [SerializeField] AudioClip deathSound;
+    [SerializeField] float deathVolume = 1f;
 
     // Cached Refs
     SpriteRenderer spriteRenderer;
@@ -36,7 +38,7 @@ public class Health : MonoBehaviour
 
     public void HandleHit(float damage)
     {
-        PlayHitSFX();
+        PlaySFX(hitSounds[Random.Range(0, hitSounds.Length)], hitVolume);
         StartCoroutine(HitFlash());
         DealDamage(damage);        
     }
@@ -48,6 +50,7 @@ public class Health : MonoBehaviour
         { 
             Destroy(gameObject);
             PlayDeathVFX();
+            PlaySFX(deathSound, deathVolume);
         }
     }
 
@@ -58,12 +61,12 @@ public class Health : MonoBehaviour
         spriteRenderer.color = new Color(1,1,1,1);
     }
 
-    private void PlayHitSFX()
+    private void PlaySFX( AudioClip clip, float volume)
     {
         AudioSource.PlayClipAtPoint(
-            hitSounds[Random.Range(0, hitSounds.Length)],
+            clip,
             Camera.main.transform.position,
-            hitVolume
+            volume
         );
     }
 
@@ -79,4 +82,6 @@ public class Health : MonoBehaviour
         Destroy(ghost, 3f);
 
     }
+
+
 }
