@@ -5,6 +5,7 @@ using UnityEngine;
 public class DefenderButton : MonoBehaviour
 {
     [SerializeField] float hoverRatio = 1.1f;
+    [SerializeField] Defender defenderPrefab;
 
     // Cached refs
     SpriteRenderer spriteRenderer;
@@ -39,7 +40,7 @@ public class DefenderButton : MonoBehaviour
         {
             button.GetComponent<SpriteRenderer>().color = new Color32(255, 214, 137, 85);
         }
-
+        FindObjectOfType<DefenderSpawner>().SetDefender(defenderPrefab);
         spriteRenderer.color = Color.white;
     }
 }

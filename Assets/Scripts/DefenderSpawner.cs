@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoreGameArea : MonoBehaviour
+public class DefenderSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject defender;
+    Defender defender;
 
     private void OnMouseDown()
     {
@@ -14,7 +14,7 @@ public class CoreGameArea : MonoBehaviour
 
     private void SpawnDefender()
     {
-        GameObject newDefender = Instantiate(defender, GetSquareClicked(), Quaternion.identity);
+        Defender newDefender = Instantiate(defender, GetSquareClicked(), Quaternion.identity) as Defender;
     }
 
     private Vector2 GetSquareClicked()
@@ -24,5 +24,10 @@ public class CoreGameArea : MonoBehaviour
         worldPosition.x = Mathf.Round(worldPosition.x);
         worldPosition.y = Mathf.Round(worldPosition.y);
         return worldPosition;
+    }
+
+    public void SetDefender( Defender defender )
+    {
+        this.defender = defender;
     }
 }
