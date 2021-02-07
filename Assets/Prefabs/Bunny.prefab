@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f5e413aba69102428f92f2b953bfc14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 100
   hitTint: {r: 1, g: 0.3137255, b: 0.3137255, a: 1}
   hitFlashDuration: 0.2
   hitSounds:
