@@ -238,12 +238,12 @@ PrefabInstance:
     - target: {fileID: 4300405281577990577, guid: bad0f1041d78876449f23c8d8cb92bb3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.64
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4300405281577990577, guid: bad0f1041d78876449f23c8d8cb92bb3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.064
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4300405281577990577, guid: bad0f1041d78876449f23c8d8cb92bb3,
         type: 3}
@@ -1672,12 +1672,12 @@ PrefabInstance:
     - target: {fileID: 2753273200001244582, guid: ea63c12e4234f324aa4317a8b2139a15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.011
+      value: 8.036
       objectReference: {fileID: 0}
     - target: {fileID: 2753273200001244582, guid: ea63c12e4234f324aa4317a8b2139a15,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.039
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2753273200001244582, guid: ea63c12e4234f324aa4317a8b2139a15,
         type: 3}
@@ -1724,17 +1724,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bunny
       objectReference: {fileID: 0}
-    - target: {fileID: 3768646344780472769, guid: ea63c12e4234f324aa4317a8b2139a15,
-        type: 3}
-      propertyPath: deathVFX
-      value: 
-      objectReference: {fileID: 2515642759820063143, guid: b3cfdc2ff38a5ec4d824ac46777ab31c,
-        type: 3}
-    - target: {fileID: 3768646344780472769, guid: ea63c12e4234f324aa4317a8b2139a15,
-        type: 3}
-      propertyPath: deathSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 666cbfd673af42e47a78008b82e25cbe, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea63c12e4234f324aa4317a8b2139a15, type: 3}
 --- !u!1001 &6069844056479074233

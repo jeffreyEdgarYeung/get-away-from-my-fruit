@@ -26,7 +26,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
         health = maxHealth;
     }
 
