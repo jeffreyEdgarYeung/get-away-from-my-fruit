@@ -34,6 +34,8 @@ public class SunDisplay : MonoBehaviour
         UpdateDisplay();
     }
 
+
+
     private string GetSunString()
     {
         int numZeros = maxSunLength - sun.ToString().Length;
@@ -46,4 +48,6 @@ public class SunDisplay : MonoBehaviour
         }
         return zeros + sun.ToString();
     }
+
+    public int GetSun() { return sun; }
 }

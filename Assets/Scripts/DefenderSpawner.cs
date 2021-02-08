@@ -5,16 +5,31 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     Defender defender;
+    SunDisplay sunDisplay;
+
+    void Start()
+    {
+        sunDisplay = FindObjectOfType<SunDisplay>();
+    }
 
     private void OnMouseDown()
     {
-        SpawnDefender();
+        AttemptSpawnAt(GetSquareClicked());
     }
 
-    private void SpawnDefender()
+    private void SpawnDefender(Vector2 gridPosition)
     {
         if(defender == null) { return; }
-        Defender newDefender = Instantiate(defender, GetSquareClicked(), Quaternion.identity) as Defender;
+        Defender newDefender = Instantiate(defender, gridPosition, Quaternion.identity) as Defender;
+    }
+
+    private void AttemptSpawnAt( Vector2 gridPosition )
+    {
+        if(defender.GetCost() <= sunDisplay.GetSun())
+        {
+            SpawnDefender(gridPosition);
+            sunDisplay.SpendSun(defender.GetCost());
+        }
     }
 
     private Vector2 GetSquareClicked()

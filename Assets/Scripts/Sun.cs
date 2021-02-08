@@ -54,12 +54,10 @@ public class Sun : MonoBehaviour
 
         gameObject.GetComponent<Animator>().enabled = false;
         moving = true;
-        Debug.Log("click");
     }
 
     private void MoveToBank()
     {
-        Debug.Log("In Loop");
         body.transform.position = Vector3.MoveTowards(
             body.transform.position,
             sunBankPosition,
