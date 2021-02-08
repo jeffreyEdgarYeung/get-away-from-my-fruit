@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 599570490217401551}
   - component: {fileID: 2100146130}
   m_Layer: 0
-  m_Name: Sun
+  m_Name: Sun Flower Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  sunBankPosition: {x: 1.4, y: 0.8, z: 0}
+  sunBankPosition: {x: 2.15, y: 0.233, z: 0}
   sfx: {fileID: 8300000, guid: 7bb92cf54a602ea448bcec586b795169, type: 3}
   sfxVolume: 0.5
 --- !u!50 &599570490217401551

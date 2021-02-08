@@ -20,11 +20,13 @@ public class Sun : MonoBehaviour
 
     // State
     bool moving;
+    GameObject body;
 
     void Start()
     {
         sunDisplay = FindObjectOfType<SunDisplay>();
         moving = false;
+        body = transform.Find("Body").gameObject;
     }
 
     void Update()
@@ -34,7 +36,7 @@ public class Sun : MonoBehaviour
             MoveToBank();
         }
 
-        if(transform.position == sunBankPosition)
+        if(body.transform.position == sunBankPosition)
         {
             Destroy(gameObject);
             sunDisplay.AddSun(sunValue);
@@ -58,8 +60,8 @@ public class Sun : MonoBehaviour
     private void MoveToBank()
     {
         Debug.Log("In Loop");
-        transform.position = Vector3.MoveTowards(
-            transform.position,
+        body.transform.position = Vector3.MoveTowards(
+            body.transform.position,
             sunBankPosition,
             moveSpeed * Time.deltaTime
         );

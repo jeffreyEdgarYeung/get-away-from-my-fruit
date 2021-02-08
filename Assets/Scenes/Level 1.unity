@@ -121,80 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &45560710
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.081
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.264
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401544, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490217401549, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_Name
-      value: Sun Flower Sun
-      objectReference: {fileID: 0}
-    - target: {fileID: 599570490879305202, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8afe4abbd5a370d42b50bf0dc00596bd, type: 3}
 --- !u!1001 &134809248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -886,7 +812,7 @@ PrefabInstance:
     - target: {fileID: 7819255874245200704, guid: de1a5e3bbdfc7ad428b0d1c81d90b6b2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7819255874245200704, guid: de1a5e3bbdfc7ad428b0d1c81d90b6b2,
         type: 3}
