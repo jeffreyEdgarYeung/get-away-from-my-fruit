@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 7819255874245200704}
   - component: {fileID: 7819255874245200706}
   - component: {fileID: 2122661919712191634}
+  - component: {fileID: 7738400402120558644}
   m_Layer: 0
   m_Name: Sun Flower
   m_TagString: Untagged
@@ -147,3 +148,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunCost: 50
+--- !u!114 &7738400402120558644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7819255874245200717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780c192f0304c354aa350993694f927c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sunPrefab: {fileID: 599570490217401545, guid: 8afe4abbd5a370d42b50bf0dc00596bd,
+    type: 3}
+  initDropWait: 7.75
+  coolDownMin: 22
+  coolDownMax: 25
