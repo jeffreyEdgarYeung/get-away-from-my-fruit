@@ -13,6 +13,7 @@ public class DefenderSpawner : MonoBehaviour
 
     private void SpawnDefender()
     {
+        if(defender == null) { return; }
         Defender newDefender = Instantiate(defender, GetSquareClicked(), Quaternion.identity) as Defender;
     }
 
