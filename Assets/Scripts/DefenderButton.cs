@@ -5,7 +5,10 @@ using UnityEngine;
 public class DefenderButton : MonoBehaviour
 {
     [SerializeField] float hoverRatio = 1.1f;
+    [SerializeField] [Range(0f,1f)] float sfxVolume;
+    [SerializeField] AudioClip hoverSFX;
     [SerializeField] Defender defenderPrefab;
+    
 
     // Cached refs
     SpriteRenderer spriteRenderer;
@@ -22,8 +25,9 @@ public class DefenderButton : MonoBehaviour
         normalSize = gameObject.transform.localScale;
     }
 
-    private void OnMouseOver()
+    private void OnMouseEnter()
     {
+        AudioSource.PlayClipAtPoint(hoverSFX, Camera.main.transform.position, sfxVolume);
         gameObject.transform.localScale = hoverSize;
     }
 

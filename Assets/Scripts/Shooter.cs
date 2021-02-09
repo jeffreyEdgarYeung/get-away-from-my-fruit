@@ -7,7 +7,6 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject gun, projectile;
     [SerializeField] float sfxVolume = 1f;
     [SerializeField] AudioClip fireSFX;
-    
 
     public void Fire()
     {
@@ -18,5 +17,7 @@ public class Shooter : MonoBehaviour
             gun.transform.position, 
             Quaternion.identity
         );
+
+        bullet.transform.parent = transform;
     }
 }
