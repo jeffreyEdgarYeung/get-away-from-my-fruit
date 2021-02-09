@@ -214,8 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0b425e7f3f09b48a411cf5785f400a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnTime: 1
-  maxSpawnTime: 5
+  minSpawnTime: 9
+  maxSpawnTime: 10
   enemyPrefab: {fileID: 4300405281577990578, guid: bad0f1041d78876449f23c8d8cb92bb3,
     type: 3}
 --- !u!1001 &143955783
@@ -817,8 +817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0b425e7f3f09b48a411cf5785f400a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnTime: 1
-  maxSpawnTime: 5
+  minSpawnTime: 9
+  maxSpawnTime: 10
   enemyPrefab: {fileID: 4300405281577990578, guid: bad0f1041d78876449f23c8d8cb92bb3,
     type: 3}
 --- !u!1 &1384176499
@@ -1022,8 +1022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0b425e7f3f09b48a411cf5785f400a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnTime: 1
-  maxSpawnTime: 5
+  minSpawnTime: 9
+  maxSpawnTime: 10
   enemyPrefab: {fileID: 4300405281577990578, guid: bad0f1041d78876449f23c8d8cb92bb3,
     type: 3}
 --- !u!1 &1677617488
@@ -1185,8 +1185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0b425e7f3f09b48a411cf5785f400a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnTime: 1
-  maxSpawnTime: 5
+  minSpawnTime: 9
+  maxSpawnTime: 10
   enemyPrefab: {fileID: 4300405281577990578, guid: bad0f1041d78876449f23c8d8cb92bb3,
     type: 3}
 --- !u!1 &1783447680
@@ -1331,7 +1331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1841902937
 Transform:
   m_ObjectHideFlags: 0
@@ -1444,8 +1444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0b425e7f3f09b48a411cf5785f400a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnTime: 1
-  maxSpawnTime: 5
+  minSpawnTime: 9
+  maxSpawnTime: 10
   enemyPrefab: {fileID: 4300405281577990578, guid: bad0f1041d78876449f23c8d8cb92bb3,
     type: 3}
 --- !u!1001 &512726722551188309
@@ -1817,6 +1817,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 325804601, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: sun
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8575220987174171466, guid: 636f861f1f384ff41900c3792ade4527,
         type: 3}
       propertyPath: m_Name

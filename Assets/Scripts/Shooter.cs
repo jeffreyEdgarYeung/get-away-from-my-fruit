@@ -8,6 +8,39 @@ public class Shooter : MonoBehaviour
     [SerializeField] float sfxVolume = 1f;
     [SerializeField] AudioClip fireSFX;
 
+    AttackerSpawner myLaneSpawner;
+
+    void Start()
+    {
+        SetLaneSpawner();
+    }
+
+    void Update()
+    {
+        if (AttackerInLane())
+        {
+            Debug.Log("ATTACK");
+        }
+        else
+        {
+            Debug.Log("CHILL");
+        }
+    }
+
+    private void SetLaneSpawner()
+    {
+        AttackerSpawner[] spawners = FindObjectsOfType<AttackerSpawner>();
+
+        foreach(AttackerSpawner spawner in spawners)
+        {
+            if (InSameLane(spawner))
+            {
+                myLaneSpawner = spawner;
+                break;
+            }
+        }
+    }
+
     public void Fire()
     {
         AudioSource.PlayClipAtPoint(fireSFX, Camera.main.transform.position, sfxVolume);
@@ -19,5 +52,15 @@ public class Shooter : MonoBehaviour
         );
 
         bullet.transform.parent = transform;
+    }
+
+    private bool InSameLane(AttackerSpawner x)
+    {
+        return (Mathf.Abs(x.transform.position.y - transform.position.y) <= Mathf.Epsilon);
+    }
+
+    private bool AttackerInLane()
+    {
+        return myLaneSpawner.transform.childCount > 0;
     }
 }
