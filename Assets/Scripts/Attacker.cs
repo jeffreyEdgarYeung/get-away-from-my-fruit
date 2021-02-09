@@ -5,11 +5,15 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
     [Range(0f, 5f)] float currSpeed = 1f;
+    GameObject currTarget;
+
+    // Cached Refs
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,5 +25,11 @@ public class Attacker : MonoBehaviour
     public void SetMovementSpeed(float speed)
     {
         currSpeed = speed;
+    }
+
+    public void Attack(GameObject target)
+    {
+        animator.SetBool("IsAttacking", true);
+        currTarget = target;
     }
 }
