@@ -28,7 +28,8 @@ public class SunSpawner : MonoBehaviour
 
     private void SpawnSun()
     {
-        Sun newSun = Instantiate(sunPrefab, transform.position, Quaternion.identity) as Sun;
+        Vector3 sunSpot = new Vector3(transform.position.x, transform.position.y, -1);
+        Sun newSun = Instantiate(sunPrefab, sunSpot, Quaternion.identity) as Sun;
         newSun.transform.parent = transform;
     }
 }

@@ -37,6 +37,7 @@ public class Shooter : MonoBehaviour
         {
             if (InSameLane(spawner))
             {
+
                 myLaneSpawner = spawner;
                 break;
             }

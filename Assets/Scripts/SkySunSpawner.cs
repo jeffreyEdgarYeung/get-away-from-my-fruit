@@ -16,7 +16,7 @@ public class SkySunSpawner : MonoBehaviour
     {
         while (true)
         {
-            Vector3 spawnSpot = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), 0); 
+            Vector3 spawnSpot = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), -1); 
             yield return new WaitForSeconds(Random.Range(coolDownMin, coolDownMax));
             Sun newSun = Instantiate(sunPrefab, spawnSpot, Quaternion.identity) as Sun;
             newSun.transform.parent = transform;
