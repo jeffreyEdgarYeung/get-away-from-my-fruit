@@ -9,9 +9,11 @@ public class Shooter : MonoBehaviour
     [SerializeField] AudioClip fireSFX;
 
     AttackerSpawner myLaneSpawner;
+    Animator animator;
 
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
         SetLaneSpawner();
     }
 
@@ -19,11 +21,11 @@ public class Shooter : MonoBehaviour
     {
         if (AttackerInLane())
         {
-            Debug.Log("ATTACK");
+            animator.SetBool("IsAttacking", true);
         }
         else
         {
-            Debug.Log("CHILL");
+            animator.SetBool("IsAttacking", false);
         }
     }
 
