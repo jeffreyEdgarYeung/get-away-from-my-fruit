@@ -1007,6 +1007,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 30638912427f64c4c988095725ab2ad9, type: 3}
   - {fileID: 8300000, guid: 2bdcd9cdf2e8a464faf4431367f960b5, type: 3}
   sfxVolume: 0.5
+  cursorPrefab: {fileID: 2606999833381631185, guid: 63889a9511ea0dc4a9e6a6236a0af964,
+    type: 3}
 --- !u!61 &1601588481
 BoxCollider2D:
   m_ObjectHideFlags: 0

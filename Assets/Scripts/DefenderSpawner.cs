@@ -9,14 +9,39 @@ public class DefenderSpawner : MonoBehaviour
     [SerializeField] AudioClip[] spawnSFX;
     [SerializeField] [Range(0f, 1f)] float sfxVolume;
 
+    [SerializeField] GameObject cursorPrefab;
+    GameObject fieldCursor;
+
     void Start()
     {
         sunDisplay = FindObjectOfType<SunDisplay>();
     }
 
+    void Update()
+    {
+        if (fieldCursor)
+        {
+            fieldCursor.transform.position = GetSquare();
+        }
+    }
+
+    private void OnMouseEnter()
+    {
+        fieldCursor = Instantiate(
+            cursorPrefab,
+            GetSquare(),
+            Quaternion.identity
+        ) as GameObject;
+    }
+
+    private void OnMouseExit()
+    {
+        Destroy(fieldCursor);
+    }
+
     private void OnMouseDown()
     {
-        AttemptSpawnAt(GetSquareClicked());
+        AttemptSpawnAt(GetSquare());
     }
 
     private void SpawnDefender(Vector2 gridPosition)
@@ -48,7 +73,7 @@ public class DefenderSpawner : MonoBehaviour
         }
     }
 
-    private Vector2 GetSquareClicked()
+    private Vector2 GetSquare()
     {
         Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
