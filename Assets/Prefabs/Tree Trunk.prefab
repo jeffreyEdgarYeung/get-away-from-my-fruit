@@ -71,7 +71,7 @@ MonoBehaviour:
   projectile: {fileID: 2451051348334189541, guid: e50fa95555d3c3f4cbb0344ff2863c11,
     type: 3}
   sfxVolume: 1
-  fireSFX: {fileID: 0}
+  fireSFX: {fileID: 8300000, guid: f6c0b0ce642facc4ba85f9893eb9489a, type: 3}
 --- !u!114 &3227505710736608361
 MonoBehaviour:
   m_ObjectHideFlags: 0
