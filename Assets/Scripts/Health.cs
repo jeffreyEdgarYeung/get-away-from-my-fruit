@@ -38,7 +38,10 @@ public class Health : MonoBehaviour
 
     public void HandleHit(float damage)
     {
-        PlaySFX(hitSounds[Random.Range(0, hitSounds.Length)], hitVolume);
+        if(hitSounds.Length > 0)
+        {
+            PlaySFX(hitSounds[Random.Range(0, hitSounds.Length)], hitVolume);
+        }
         StartCoroutine(HitFlash());
         DealDamage(damage);        
     }
@@ -63,6 +66,7 @@ public class Health : MonoBehaviour
 
     private void PlaySFX( AudioClip clip, float volume)
     {
+        if (!clip) { return; }
         AudioSource.PlayClipAtPoint(
             clip,
             Camera.main.transform.position,
@@ -72,6 +76,8 @@ public class Health : MonoBehaviour
 
     private void PlayDeathVFX()
     {
+        if (!deathVFX) { return; }
+
         Vector3 dVFXPos = new Vector3(
             transform.position.x + xAdjust,
             transform.position.y + yAdjust,

@@ -46,7 +46,10 @@ public class Shooter : MonoBehaviour
 
     public void Fire()
     {
-        AudioSource.PlayClipAtPoint(fireSFX, Camera.main.transform.position, sfxVolume);
+        if (fireSFX)
+        {
+            AudioSource.PlayClipAtPoint(fireSFX, Camera.main.transform.position, sfxVolume);
+        }
         GameObject bullet = Instantiate
         (
             projectile, 

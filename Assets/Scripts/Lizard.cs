@@ -11,4 +11,6 @@ public class Lizard : MonoBehaviour
             GetComponent<Attacker>().Attack(collision.gameObject);
         }
     }
+
+   
 }

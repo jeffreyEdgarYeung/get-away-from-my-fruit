@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 730458581682076361}
   - component: {fileID: 8923242997705839897}
   - component: {fileID: 5963797411892487521}
+  - component: {fileID: 3308840113557118396}
+  - component: {fileID: 542024797}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -92,6 +94,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0044477, y: 0.99543524}
   m_EdgeRadius: 0
+--- !u!114 &3308840113557118396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730458581682076358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5e413aba69102428f92f2b953bfc14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 300
+  hitTint: {r: 0.53333336, g: 0.53333336, b: 0.53333336, a: 1}
+  hitFlashDuration: 0.2
+  hitSounds: []
+  hitVolume: 1
+  deathVFX: {fileID: 0}
+  xAdjust: 0
+  yAdjust: 0
+  deathSound: {fileID: 0}
+  deathVolume: 1
+--- !u!114 &542024797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730458581682076358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec034e8c2f7a6d40ac2d5b1de9fa03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8875808677469267904
 GameObject:
   m_ObjectHideFlags: 0
