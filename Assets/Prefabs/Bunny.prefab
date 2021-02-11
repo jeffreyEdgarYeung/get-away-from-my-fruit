@@ -312,6 +312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5d2bc4cbce2eed428c1707c1891fabd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpSFX: {fileID: 8300000, guid: 499d22a7cc131fb4c8efbc87495953ff, type: 3}
+  jumpVolume: 0.2
 --- !u!50 &1129551823
 Rigidbody2D:
   serializedVersion: 4
