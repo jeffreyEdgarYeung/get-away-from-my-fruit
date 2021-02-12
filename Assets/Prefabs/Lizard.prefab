@@ -312,6 +312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1c827ac4973594587eccf6ddcc7890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSFX: {fileID: 8300000, guid: 19aef79e6d169044bb911ab3e73cbbe0, type: 3}
+  hitVolume: 0.2
 --- !u!50 &2855389883127962247
 Rigidbody2D:
   serializedVersion: 4

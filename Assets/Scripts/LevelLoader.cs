@@ -45,7 +45,7 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator FadeDelay()
     {
-        yield return new WaitForSeconds(delay- fadeLoadDifference);
+        yield return new WaitForSeconds(delay - fadeLoadDifference);
         Instantiate(fadeOut, transform.position, Quaternion.identity);
     }
 }
