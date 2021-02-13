@@ -50,20 +50,14 @@ public class LevelLoader : MonoBehaviour
         Instantiate(fadeOut, transform.position, Quaternion.identity);
     }
 
-    public IEnumerator LoadGameOverDelay(float gameOverDelay)
+    public IEnumerator LoadGameOver(float gameOverDelay)
     {
         yield return new WaitForSecondsRealtime(gameOverDelay);
         Debug.Log("Byebye");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Game Over");
-        //StartCoroutine(LoadGameOver(fadeOutTime));
+        
     }
 
-    IEnumerator LoadGameOver(float fadeOutDelay)
-    {
-        Debug.Log("FadeStart");
-       
-        yield return new WaitForSecondsRealtime(fadeOutDelay);
-        SceneManager.LoadScene("Game Over");
-    }
+   
 }

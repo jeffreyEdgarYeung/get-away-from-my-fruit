@@ -11,7 +11,7 @@ public class Fruit : MonoBehaviour
     {
         Time.timeScale = 0f;
         AudioSource.PlayClipAtPoint(loseSFX, Camera.main.transform.position, loseVolume);
-        StartCoroutine(FindObjectOfType<LevelLoader>().LoadGameOverDelay(loseSFX.length));
+        StartCoroutine(FindObjectOfType<LevelLoader>().LoadGameOver(loseSFX.length));
        
     }
 }
