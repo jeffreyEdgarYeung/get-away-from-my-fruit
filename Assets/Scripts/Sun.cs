@@ -44,7 +44,7 @@ public class Sun : MonoBehaviour
 
     }
 
-    private void OnMouseDown()
+    private void OnMouseEnter()
     {
         AudioSource.PlayClipAtPoint(
             sfx,

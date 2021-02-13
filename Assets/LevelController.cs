@@ -14,18 +14,27 @@ public class LevelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        HandlePause();
+    }
+
+    private void HandlePause()
+    {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //GameObject pauseMenu = FindObjectOfType<PauseMenu>();
-            pauseMenu.SetActive(!pauseMenu.activeSelf);
-            if(Time.timeScale == 1f)
-            {
-                Time.timeScale = 0f;
-            }
-            else
-            {
-                Time.timeScale = 1f;
-            }
+            TogglePause();
+        }
+    }
+
+    public void TogglePause()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        if (Time.timeScale == 1f)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
         }
     }
 }

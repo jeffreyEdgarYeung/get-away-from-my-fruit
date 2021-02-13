@@ -53,11 +53,21 @@ public class LevelLoader : MonoBehaviour
     public IEnumerator LoadGameOver(float gameOverDelay)
     {
         yield return new WaitForSecondsRealtime(gameOverDelay);
-        Debug.Log("Byebye");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Game Over");
         
     }
 
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Start Screen");
+    }
+
+    public void ReloadCurrentScene()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
    
 }
