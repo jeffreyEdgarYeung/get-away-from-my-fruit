@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: -3697563498125198371, guid: 7b4dda0b098e62e49aa3bd4ae612ea2d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -312,6 +312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1c827ac4973594587eccf6ddcc7890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSFX: {fileID: 8300000, guid: 19aef79e6d169044bb911ab3e73cbbe0, type: 3}
+  hitVolume: 0.2
 --- !u!50 &2855389883127962247
 Rigidbody2D:
   serializedVersion: 4
@@ -346,6 +348,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1, y: -0.35}
+  m_Offset: {x: -0.6, y: -0.35}
   serializedVersion: 2
-  m_Radius: 0.04
+  m_Radius: 0.05

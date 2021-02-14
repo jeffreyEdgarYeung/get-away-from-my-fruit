@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3227505710736608374}
   - component: {fileID: 3227505710736608361}
   - component: {fileID: 3227505710736608360}
+  - component: {fileID: 72544616}
   m_Layer: 0
   m_Name: Tree Trunk
   m_TagString: Untagged
@@ -70,7 +71,7 @@ MonoBehaviour:
   projectile: {fileID: 2451051348334189541, guid: e50fa95555d3c3f4cbb0344ff2863c11,
     type: 3}
   sfxVolume: 1
-  fireSFX: {fileID: 8300000, guid: 334f9936ecc0dce4485e08e3292ac165, type: 3}
+  fireSFX: {fileID: 8300000, guid: f6c0b0ce642facc4ba85f9893eb9489a, type: 3}
 --- !u!114 &3227505710736608361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +111,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99310064}
   m_EdgeRadius: 0
+--- !u!114 &72544616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3227505710736608362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5e413aba69102428f92f2b953bfc14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  hitTint: {r: 1, g: 0.3137255, b: 0.3137255, a: 1}
+  hitFlashDuration: 0.2
+  hitSounds: []
+  hitVolume: 1
+  deathVFX: {fileID: 0}
+  xAdjust: 0
+  yAdjust: 0
+  deathSound: {fileID: 0}
+  deathVolume: 1
 --- !u!1 &3227505711761540262
 GameObject:
   m_ObjectHideFlags: 0

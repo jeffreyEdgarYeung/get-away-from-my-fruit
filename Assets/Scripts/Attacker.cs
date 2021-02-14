@@ -20,8 +20,11 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.left * Time.deltaTime * currSpeed);
+        if (!currTarget)
+        {
+            Move();
+        }
     }
-
     public void SetMovementSpeed(float speed)
     {
         currSpeed = speed;
@@ -31,5 +34,23 @@ public class Attacker : MonoBehaviour
     {
         animator.SetBool("IsAttacking", true);
         currTarget = target;
+    }
+
+    public void Move()
+    {
+        animator.SetBool("IsAttacking", false);
+    }
+
+    public void StrikeTarget(float damage)
+    {
+        if (!currTarget)
+        {
+            return;
+        }
+        Health health = currTarget.GetComponent<Health>();
+        if (health)
+        {
+            health.HandleHit(damage);
+        }
     }
 }

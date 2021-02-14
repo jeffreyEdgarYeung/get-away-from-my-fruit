@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 2122661919712191634}
   - component: {fileID: 7738400402120558644}
   - component: {fileID: 3774902529493619946}
+  - component: {fileID: 8120827238887827629}
   m_Layer: 0
   m_Name: Sun Flower
   m_TagString: Untagged
@@ -192,3 +193,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0094135, y: 0.9855046}
   m_EdgeRadius: 0
+--- !u!114 &8120827238887827629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7819255874245200717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5e413aba69102428f92f2b953bfc14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  hitTint: {r: 1, g: 0.3137255, b: 0.3137255, a: 1}
+  hitFlashDuration: 0.2
+  hitSounds: []
+  hitVolume: 1
+  deathVFX: {fileID: 0}
+  xAdjust: 0
+  yAdjust: 0
+  deathSound: {fileID: 0}
+  deathVolume: 1

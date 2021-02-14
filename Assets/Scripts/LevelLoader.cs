@@ -10,6 +10,7 @@ public class LevelLoader : MonoBehaviour
     [Header("Fade Out")]
     [SerializeField] GameObject fadeOut;
     [SerializeField] float fadeLoadDifference;
+    [SerializeField] float fadeOutTime;
 
     int currSceneIdx;
 
@@ -35,7 +36,6 @@ public class LevelLoader : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         LoadNextScene();
-        SceneManager.LoadScene("Start Screen");
     }
 
     public void LoadNextScene()
@@ -45,7 +45,28 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator FadeDelay()
     {
-        yield return new WaitForSeconds(delay- fadeLoadDifference);
+        yield return new WaitForSeconds(delay - fadeLoadDifference);
         Instantiate(fadeOut, transform.position, Quaternion.identity);
     }
+
+    public IEnumerator LoadGameOver(float gameOverDelay)
+    {
+        yield return new WaitForSecondsRealtime(gameOverDelay);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Game Over");
+        
+    }
+
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Start Screen");
+    }
+
+    public void ReloadCurrentScene()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+   
 }
