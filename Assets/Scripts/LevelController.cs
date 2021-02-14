@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    public GameObject pauseMenu;
+    [SerializeField] GameObject pauseMenu;
+
+    [Header("SFX")]
+    [SerializeField] AudioClip pauseSFX;
+    [SerializeField] [Range(0f, 1f)] float pauseVolume = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +32,7 @@ public class LevelController : MonoBehaviour
 
     public void TogglePause()
     {
+        AudioSource.PlayClipAtPoint(pauseSFX, Camera.main.transform.position, pauseVolume);
         pauseMenu.SetActive(!pauseMenu.activeSelf);
         if (Time.timeScale == 1f)
         {

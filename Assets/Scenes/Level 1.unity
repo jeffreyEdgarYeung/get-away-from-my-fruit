@@ -833,6 +833,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1719203522}
+  pauseSFX: {fileID: 8300000, guid: db2eb12ca568ddb439ea6e87f24fb1ac, type: 3}
+  pauseVolume: 0.5
 --- !u!4 &512167231
 Transform:
   m_ObjectHideFlags: 0
@@ -1483,7 +1485,7 @@ RectTransform:
   m_LocalScale: {x: 0.003280923, y: 0.003280923, z: 0.003280923}
   m_Children: []
   m_Father: {fileID: 1940751467}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2200,7 +2202,7 @@ RectTransform:
   m_LocalScale: {x: 0.003280923, y: 0.003280923, z: 0.003280923}
   m_Children: []
   m_Father: {fileID: 1940751467}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2339,7 +2341,7 @@ RectTransform:
   m_LocalScale: {x: 0.003280923, y: 0.003280923, z: 0.003280923}
   m_Children: []
   m_Father: {fileID: 1940751467}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3447,9 +3449,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0.96833766}
   m_LocalScale: {x: 0.008681131, y: 0.015236232, z: 0.96833766}
   m_Children:
-  - {fileID: 949098307}
   - {fileID: 1637538693}
   - {fileID: 1629478990}
+  - {fileID: 949098307}
   m_Father: {fileID: 1719203524}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

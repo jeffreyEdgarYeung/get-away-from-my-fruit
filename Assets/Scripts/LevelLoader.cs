@@ -36,7 +36,6 @@ public class LevelLoader : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         LoadNextScene();
-        SceneManager.LoadScene("Start Screen");
     }
 
     public void LoadNextScene()
