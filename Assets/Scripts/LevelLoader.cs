@@ -39,8 +39,10 @@ public class LevelLoader : MonoBehaviour
         LoadNextScene();
     }
 
-    public void LoadNextScene()
+    public IEnumerator LoadNextScene()
     {
+        Instantiate(fadeOut, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(fadeOutTime);
         SceneManager.LoadScene(currSceneIdx + 1);
     }
 

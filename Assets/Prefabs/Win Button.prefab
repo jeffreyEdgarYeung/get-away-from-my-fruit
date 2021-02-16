@@ -194,3 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf5778863c52864c8d301004a0416b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
+  centerScreenPosition: {x: 5, y: 3, z: 0}
+  growScale: 1.0005
+  sfx: {fileID: 8300000, guid: 030fd4b83d1a2bb41b7c1f233ec36c0a, type: 3}
+  sfxVolume: 0.3
