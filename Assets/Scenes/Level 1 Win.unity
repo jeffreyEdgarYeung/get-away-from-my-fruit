@@ -607,7 +607,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 126476761}
-        m_MethodName: LoadNextScene
+        m_MethodName: LoadNextSceneWrapper
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

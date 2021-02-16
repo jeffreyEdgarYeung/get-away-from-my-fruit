@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject loseMenu;
     [SerializeField] GameObject winButton;
 
     [Header("SFX")]
@@ -14,6 +15,13 @@ public class LevelController : MonoBehaviour
     // State
     int numAttackers = 0;
     bool timerFinished = false;
+    
+
+    void Start()
+    {
+        pauseMenu.SetActive(false);
+        loseMenu.SetActive(false);
+    }
 
     public void AttackerSpawned()
     {
@@ -72,6 +80,28 @@ public class LevelController : MonoBehaviour
         foreach (AttackerSpawner spawner in spawners)
         {
             spawner.SetSpawn(false);
+        }
+    }
+
+    private void ToggleLoseMenu()
+    {
+        loseMenu.SetActive(!loseMenu.activeSelf);
+    }
+
+    public IEnumerator LoadGameOver(float gameOverDelay)
+    {
+        yield return new WaitForSecondsRealtime(gameOverDelay);
+        ToggleLoseMenu();
+        ShredAttackers();
+
+    }
+
+    private void ShredAttackers()
+    {
+        Attacker[] attackers = FindObjectsOfType<Attacker>();
+        foreach (Attacker attacker in attackers)
+        {
+            Destroy(attacker);
         }
     }
 }
