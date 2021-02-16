@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject winButton;
 
     [Header("SFX")]
     [SerializeField] AudioClip pauseSFX;
@@ -26,6 +27,7 @@ public class LevelController : MonoBehaviour
         {
             Debug.Log("End Level");
             Debug.Log("Death At:" + attackerPos);
+            Instantiate(winButton, attackerPos, Quaternion.identity);
         }
     }
 

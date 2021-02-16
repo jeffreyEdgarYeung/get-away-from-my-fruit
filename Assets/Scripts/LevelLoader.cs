@@ -32,6 +32,7 @@ public class LevelLoader : MonoBehaviour
         
     }
 
+    // For Splash Screen only
     IEnumerator LoadDelay()
     {
         yield return new WaitForSeconds(delay);
@@ -43,6 +44,7 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currSceneIdx + 1);
     }
 
+    // For Splash Screen only
     IEnumerator FadeDelay()
     {
         yield return new WaitForSeconds(delay - fadeLoadDifference);
