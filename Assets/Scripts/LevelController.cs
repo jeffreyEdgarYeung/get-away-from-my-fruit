@@ -10,10 +10,23 @@ public class LevelController : MonoBehaviour
     [SerializeField] AudioClip pauseSFX;
     [SerializeField] [Range(0f, 1f)] float pauseVolume = 1f;
 
-    // Start is called before the first frame update
-    void Start()
+    // State
+    int numAttackers = 0;
+    bool timerFinished = false;
+
+    public void AttackerSpawned()
     {
-        
+        numAttackers++;
+    }
+
+    public void AttackerKilled( Vector3 attackerPos )
+    {
+        numAttackers--;
+        if(numAttackers == 0 && timerFinished)
+        {
+            Debug.Log("End Level");
+            Debug.Log("Death At:" + attackerPos);
+        }
     }
 
     // Update is called once per frame
@@ -41,6 +54,22 @@ public class LevelController : MonoBehaviour
         else
         {
             Time.timeScale = 1f;
+        }
+    }
+
+    public void SetTimerFinished()
+    {
+        timerFinished = true;
+        StopSpawners();
+    }
+
+    private void StopSpawners()
+    {
+        AttackerSpawner[] spawners = FindObjectsOfType<AttackerSpawner>();
+
+        foreach (AttackerSpawner spawner in spawners)
+        {
+            spawner.SetSpawn(false);
         }
     }
 }

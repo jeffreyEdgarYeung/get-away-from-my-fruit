@@ -7,6 +7,7 @@ public class GameTimer : MonoBehaviour
 {
     [SerializeField] float levelTime = 10f;
 
+    bool levelFinished = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,15 @@ public class GameTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (levelFinished) { return; }
+
         GetComponent<Slider>().value = Time.timeSinceLevelLoad / levelTime;
 
         if (Time.timeSinceLevelLoad >= levelTime)
         {
             Debug.Log("Fini");
+            FindObjectOfType<LevelController>().SetTimerFinished();
+            levelFinished = true;
         }
     }
 }
