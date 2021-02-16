@@ -53,14 +53,6 @@ public class LevelLoader : MonoBehaviour
         Instantiate(fadeOut, transform.position, Quaternion.identity);
     }
 
-    public IEnumerator LoadGameOver(float gameOverDelay)
-    {
-        yield return new WaitForSecondsRealtime(gameOverDelay);
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Game Over");
-        
-    }
-
     public void LoadMainMenu()
     {
         Time.timeScale = 1f;

@@ -36,6 +36,7 @@ public class WinButton : MonoBehaviour
 
     private void OnMouseDown()
     {
+        FindObjectOfType<MusicPlayer>().StopMusic();
         AudioSource.PlayClipAtPoint(
             sfx,
             Camera.main.transform.position,

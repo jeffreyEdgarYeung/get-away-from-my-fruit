@@ -47,7 +47,7 @@ public class LevelController : MonoBehaviour
 
     private void HandlePause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !loseMenu.activeSelf)
         {
             TogglePause();
         }
@@ -93,7 +93,6 @@ public class LevelController : MonoBehaviour
         yield return new WaitForSecondsRealtime(gameOverDelay);
         ToggleLoseMenu();
         ShredAttackers();
-
     }
 
     private void ShredAttackers()
