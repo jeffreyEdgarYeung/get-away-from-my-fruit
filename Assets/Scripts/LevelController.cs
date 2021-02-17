@@ -80,6 +80,7 @@ public class LevelController : MonoBehaviour
         foreach (AttackerSpawner spawner in spawners)
         {
             spawner.SetSpawn(false);
+            StartCoroutine(spawner.SpawnFinalWave());
         }
     }
 

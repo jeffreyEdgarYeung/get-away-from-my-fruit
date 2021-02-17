@@ -8,6 +8,10 @@ public class AttackerSpawner : MonoBehaviour
     [SerializeField] float maxSpawnTime = 5f;
     [SerializeField] Attacker[] enemyPrefabs;
 
+    [Header("Final Wave")]
+    [SerializeField] Attacker[] finalWaveAttackers;
+    [SerializeField] float timeBetweenSpawns = 1f;
+
     bool spawn = true;
 
     // Start is called before the first frame update
@@ -34,4 +38,20 @@ public class AttackerSpawner : MonoBehaviour
     }
 
     public void SetSpawn(bool spawn){ this.spawn = spawn; }
+
+    public IEnumerator SpawnFinalWave()
+    {
+        foreach(Attacker attacker in finalWaveAttackers)
+        {
+            Attacker newEnemy = Instantiate
+            (
+                attacker,
+                transform.position,
+                Quaternion.identity
+            ) as Attacker;
+            newEnemy.transform.parent = transform;
+
+            yield return new WaitForSeconds(timeBetweenSpawns);
+        }
+    }
 }
