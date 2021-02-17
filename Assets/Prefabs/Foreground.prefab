@@ -2097,6 +2097,8 @@ MonoBehaviour:
   promptDuration: 5
   promptPrefab: {fileID: 1962448799663133226, guid: c44efa63aec62e34a84d9fcc6d0a4987,
     type: 3}
+  finalWavePrompt: {fileID: 2841989202652825177, guid: f975ba320d954b64d8c767d61492291c,
+    type: 3}
 --- !u!1 &8575220987185993279
 GameObject:
   m_ObjectHideFlags: 0

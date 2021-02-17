@@ -11,6 +11,9 @@ public class LevelController : MonoBehaviour
     [Header("SFX")]
     [SerializeField] AudioClip pauseSFX;
     [SerializeField] [Range(0f, 1f)] float pauseVolume = 1f;
+    [SerializeField] AudioClip finalWaveSFX;
+    [SerializeField] [Range(0f, 1f)] float finalWaveVolume = 1f;
+
 
     // State
     int numAttackers = 0;
@@ -78,7 +81,10 @@ public class LevelController : MonoBehaviour
         foreach (AttackerSpawner spawner in spawners)
         {
             spawner.SetSpawn(false);
+            AudioSource.PlayClipAtPoint(finalWaveSFX, Camera.main.transform.position, finalWaveVolume);
+            StartCoroutine(FindObjectOfType<PromptController>().ShowFinalWavePrompt());
             StartCoroutine(spawner.SpawnFinalWave());
+            
         }
     }
 

@@ -10,6 +10,7 @@ public class PromptController : MonoBehaviour
     [SerializeField] float promptDuration = 5f;
 
     [SerializeField] GameObject promptPrefab;
+    [SerializeField] GameObject finalWavePrompt;
 
 
     // Start is called before the first frame update
@@ -47,5 +48,19 @@ public class PromptController : MonoBehaviour
             Destroy(newPrompt);
         }
        
+    }
+
+    public IEnumerator ShowFinalWavePrompt()
+    {
+        GameObject finalPrompt = Instantiate
+        (
+            finalWavePrompt,
+            new Vector3(5f, 3f, 0),
+            Quaternion.identity
+        ) as GameObject;
+        finalPrompt.GetComponent<Transform>().SetParent(transform);
+        yield return new WaitForSeconds(2f);
+
+        Destroy(finalPrompt);
     }
 }

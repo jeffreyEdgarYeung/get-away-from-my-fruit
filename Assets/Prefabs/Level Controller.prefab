@@ -49,3 +49,5 @@ MonoBehaviour:
     type: 3}
   pauseSFX: {fileID: 8300000, guid: db2eb12ca568ddb439ea6e87f24fb1ac, type: 3}
   pauseVolume: 0.5
+  finalWaveSFX: {fileID: 8300000, guid: 899795cd46601634eb3eb450d5290c43, type: 3}
+  finalWaveVolume: 0.5
