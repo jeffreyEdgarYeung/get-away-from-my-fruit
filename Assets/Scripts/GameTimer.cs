@@ -23,7 +23,6 @@ public class GameTimer : MonoBehaviour
 
         if (Time.timeSinceLevelLoad >= levelTime)
         {
-            Debug.Log("Fini");
             FindObjectOfType<LevelController>().SetTimerFinished();
             levelFinished = true;
         }

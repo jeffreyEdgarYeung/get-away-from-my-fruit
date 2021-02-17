@@ -33,8 +33,6 @@ public class LevelController : MonoBehaviour
         numAttackers--;
         if(numAttackers == 0 && timerFinished)
         {
-            Debug.Log("End Level");
-            Debug.Log("Death At:" + attackerPos);
             Instantiate(winButton, attackerPos, Quaternion.identity);
         }
     }

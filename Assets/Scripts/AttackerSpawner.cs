@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AttackerSpawner : MonoBehaviour
 {
+    [SerializeField] float initSpawnDelay = 0f;
     [SerializeField] float minSpawnTime = 1f;
     [SerializeField] float maxSpawnTime = 5f;
     [SerializeField] Attacker[] enemyPrefabs;
@@ -15,14 +16,32 @@ public class AttackerSpawner : MonoBehaviour
     bool spawn = true;
 
     // Start is called before the first frame update
-    IEnumerator Start()
+    void Start()
     {
+        StartCoroutine(StartDelay());
+
+        /*
         while (spawn)
         {
             yield return new WaitForSeconds(Random.Range(minSpawnTime, maxSpawnTime));
             SpawnRandomAttacker();
         }
-        
+        */
+    }
+
+    IEnumerator StartDelay()
+    {
+        yield return new WaitForSeconds(initSpawnDelay);
+        StartCoroutine(AttemptSpawn()); ;
+    }
+
+    private IEnumerator AttemptSpawn()
+    {
+        while (spawn)
+        {
+            SpawnRandomAttacker();
+            yield return new WaitForSeconds(Random.Range(minSpawnTime, maxSpawnTime));
+        }
     }
 
     private void SpawnRandomAttacker()
