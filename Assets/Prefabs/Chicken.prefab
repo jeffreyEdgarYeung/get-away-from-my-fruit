@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6066467493578494486}
   - component: {fileID: 8246410905877730754}
   - component: {fileID: 4628101777961096905}
-  - component: {fileID: 7363268168274022656}
   - component: {fileID: 6952581361023984664}
   - component: {fileID: 5054841453096394028}
+  - component: {fileID: 931819749}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
@@ -94,7 +94,7 @@ MonoBehaviour:
     type: 3}
   xAdjust: 0
   yAdjust: 0
-  deathSound: {fileID: 8300000, guid: 666cbfd673af42e47a78008b82e25cbe, type: 3}
+  deathSound: {fileID: 8300000, guid: 43a9df14e523b5d49b57c8196c9d5c71, type: 3}
   deathVolume: 1
 --- !u!61 &8246410905877730754
 BoxCollider2D:
@@ -218,20 +218,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7363268168274022656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5064597442375773804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5d2bc4cbce2eed428c1707c1891fabd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpSFX: {fileID: 8300000, guid: 499d22a7cc131fb4c8efbc87495953ff, type: 3}
-  jumpVolume: 0.2
 --- !u!50 &6952581361023984664
 Rigidbody2D:
   serializedVersion: 4
@@ -269,6 +255,20 @@ CapsuleCollider2D:
   m_Offset: {x: -0.3, y: -0.3}
   m_Size: {x: 0.3, y: 0.075}
   m_Direction: 1
+--- !u!114 &931819749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064597442375773804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ca7e8eeb347e3498989b385d4a7904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpSFX: {fileID: 8300000, guid: 499d22a7cc131fb4c8efbc87495953ff, type: 3}
+  jumpVolume: 0.2
 --- !u!1 &6952581360743112016
 GameObject:
   m_ObjectHideFlags: 0
