@@ -43,8 +43,14 @@ public class WinButton : MonoBehaviour
             sfxVolume
         );
 
-        gameObject.GetComponent<Animator>().enabled = false;
-        moving = true;
+        WinButton[] winButtons = FindObjectsOfType<WinButton>();
+
+        foreach(WinButton button in winButtons)
+        {
+            button.GetComponent<Animator>().enabled = false;
+            button.StartMoving();
+        }
+
         StartCoroutine(Transition());
         
     }
@@ -67,6 +73,11 @@ public class WinButton : MonoBehaviour
     {
         yield return new WaitForSeconds(sfx.length - 2f);
         StartCoroutine(FindObjectOfType<LevelLoader>().LoadNextScene());
+    }
+
+    public void StartMoving()
+    {
+        moving = true;
     }
 
    
