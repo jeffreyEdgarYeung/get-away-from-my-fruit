@@ -36,7 +36,7 @@ public class LevelLoader : MonoBehaviour
     IEnumerator LoadDelay()
     {
         yield return new WaitForSeconds(delay);
-        LoadNextScene();
+        StartCoroutine(LoadNextScene());
     }
 
     public IEnumerator LoadNextScene()
