@@ -47,6 +47,7 @@ public class DefenderSpawner : MonoBehaviour
     private void SpawnDefender(Vector2 gridPosition)
     {
         Defender newDefender = Instantiate(defender, gridPosition, Quaternion.identity) as Defender;
+        newDefender.transform.parent = GameObject.Find("Defenders").transform;
 
         AudioSource.PlayClipAtPoint(
             spawnSFX[Random.Range(0, spawnSFX.Length)],

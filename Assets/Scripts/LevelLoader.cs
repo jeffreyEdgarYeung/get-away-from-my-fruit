@@ -32,29 +32,25 @@ public class LevelLoader : MonoBehaviour
         
     }
 
+    // For Splash Screen only
     IEnumerator LoadDelay()
     {
         yield return new WaitForSeconds(delay);
-        LoadNextScene();
+        StartCoroutine(LoadNextScene());
     }
 
-    public void LoadNextScene()
+    public IEnumerator LoadNextScene()
     {
+        Instantiate(fadeOut, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(fadeOutTime);
         SceneManager.LoadScene(currSceneIdx + 1);
     }
 
+    // For Splash Screen only
     IEnumerator FadeDelay()
     {
         yield return new WaitForSeconds(delay - fadeLoadDifference);
         Instantiate(fadeOut, transform.position, Quaternion.identity);
-    }
-
-    public IEnumerator LoadGameOver(float gameOverDelay)
-    {
-        yield return new WaitForSecondsRealtime(gameOverDelay);
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Game Over");
-        
     }
 
     public void LoadMainMenu()
@@ -69,4 +65,8 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
    
+    public void LoadNextSceneWrapper()
+    {
+        StartCoroutine(LoadNextScene());
+    }
 }

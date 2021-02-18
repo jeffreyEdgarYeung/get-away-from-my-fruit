@@ -10,6 +10,19 @@ public class Attacker : MonoBehaviour
     // Cached Refs
     Animator animator;
 
+    void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
+    void OnDestroy()
+    {
+        if (FindObjectOfType<LevelController>())
+        {
+            FindObjectOfType<LevelController>().AttackerKilled(transform.position);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

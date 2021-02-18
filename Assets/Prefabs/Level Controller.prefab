@@ -44,5 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  loseMenu: {fileID: 0}
+  winButton: {fileID: 1042059625152400876, guid: 3847e5d79b6e5604a8aeb7678ee201f6,
+    type: 3}
   pauseSFX: {fileID: 8300000, guid: db2eb12ca568ddb439ea6e87f24fb1ac, type: 3}
   pauseVolume: 0.5
+  finalWaveSFX: {fileID: 8300000, guid: 899795cd46601634eb3eb450d5290c43, type: 3}
+  finalWaveVolume: 0.5

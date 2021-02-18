@@ -46,3 +46,4 @@ MonoBehaviour:
   delay: 5
   fadeOut: {fileID: 5160837921637498175, guid: b21869edf46abcb4caa73a98dfc2601c, type: 3}
   fadeLoadDifference: 1.5
+  fadeOutTime: 2
