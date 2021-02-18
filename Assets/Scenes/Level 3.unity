@@ -691,6 +691,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1042059625152400876, guid: 897ca4f9f4fdafa4dae1225a1ac665b6,
         type: 3}
+    - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
+        type: 3}
+      propertyPath: winButtons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
+        type: 3}
+      propertyPath: winButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1042059625152400876, guid: 897ca4f9f4fdafa4dae1225a1ac665b6,
+        type: 3}
     - target: {fileID: 5545387262163761190, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
         type: 3}
       propertyPath: m_Name
