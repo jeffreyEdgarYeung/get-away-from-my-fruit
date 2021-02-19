@@ -99,6 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sunCost: 100
   shovel: {fileID: 9139538309434107545, guid: 1d543c6a3a833464aad0683dc4222741, type: 3}
+  fieldCursor: {fileID: 2606999833381631185, guid: 732ce0ac9430abb4cad5377f8b047e25,
+    type: 3}
 --- !u!114 &1036176094609084605
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunCost: 0
+  shovel: {fileID: 0}
 --- !u!114 &9139538309434107550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   appearDuration: 0.25
   sfx: {fileID: 8300000, guid: 43bbf3eca5655ee46842dd651e34c3b9, type: 3}
-  sfxVolume: 0.4
+  sfxVolume: 0.7
 --- !u!50 &1157979345
 Rigidbody2D:
   serializedVersion: 4

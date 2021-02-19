@@ -69,6 +69,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sunCost: 50
   shovel: {fileID: 9139538309434107545, guid: 1d543c6a3a833464aad0683dc4222741, type: 3}
+  fieldCursor: {fileID: 2606999833381631185, guid: 732ce0ac9430abb4cad5377f8b047e25,
+    type: 3}
 --- !u!61 &5963797411892487521
 BoxCollider2D:
   m_ObjectHideFlags: 0
