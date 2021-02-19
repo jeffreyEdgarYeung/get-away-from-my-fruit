@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunCost: 100
+  shovel: {fileID: 9139538309434107545, guid: 1d543c6a3a833464aad0683dc4222741, type: 3}
 --- !u!114 &702959647
 MonoBehaviour:
   m_ObjectHideFlags: 0

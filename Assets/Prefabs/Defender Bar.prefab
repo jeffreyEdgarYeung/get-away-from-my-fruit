@@ -161,6 +161,7 @@ Transform:
   - {fileID: 5495112629511244914}
   - {fileID: 5495112628836293915}
   - {fileID: 5495112629182614283}
+  - {fileID: 5495112627623622818}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -961,3 +962,78 @@ MonoBehaviour:
   hoverSFX: {fileID: 8300000, guid: bdba76ed7ffe80d4685f78995ec30b87, type: 3}
   defenderPrefab: {fileID: 8923242997705839897, guid: 9cc811568290c574c84b99b282b9453e,
     type: 3}
+--- !u!1001 &8276951181863177770
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5495112627578840714}
+    m_Modifications:
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512374748611655311, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+        type: 3}
+      propertyPath: m_Name
+      value: Shovel Button
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4921fb7a9fd15b14ab9636ba06e71062, type: 3}
+--- !u!4 &5495112627623622818 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4512374748611655304, guid: 4921fb7a9fd15b14ab9636ba06e71062,
+    type: 3}
+  m_PrefabInstance: {fileID: 8276951181863177770}
+  m_PrefabAsset: {fileID: 0}
