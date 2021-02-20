@@ -544,6 +544,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1726856374}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1804265505
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995505, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_Name
+      value: Pause Button
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 535a20b4d8a15cc49a37d31ceb664937, type: 3}
 --- !u!1001 &512726722551188309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -918,6 +987,11 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1719203522}
+    - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
+        type: 3}
+      propertyPath: finalWaveVolume
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
         type: 3}
       propertyPath: winButtons.Array.size
@@ -1797,7 +1871,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 52a107999629ba844b1b2d185c660119, type: 3}
+      objectReference: {fileID: 8300000, guid: fac333cc3d00ff045b96b1e33ec11164, type: 3}
     - target: {fileID: 7480369432287256079, guid: 2d007201d81eec74093b95793b17bd6e,
         type: 3}
       propertyPath: m_Name

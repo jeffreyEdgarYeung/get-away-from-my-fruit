@@ -18,7 +18,7 @@ public class LevelLoader : MonoBehaviour
     void Start()
     {
         currSceneIdx = SceneManager.GetActiveScene().buildIndex;
-        if (currSceneIdx == 0)
+        if (currSceneIdx == 1)
         {
             StartCoroutine(LoadDelay());
             StartCoroutine(FadeDelay());
