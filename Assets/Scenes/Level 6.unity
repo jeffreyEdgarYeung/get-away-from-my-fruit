@@ -308,7 +308,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1719203522 stripped
 GameObject:
@@ -679,7 +679,7 @@ PrefabInstance:
         type: 3}
       propertyPath: winButtons.Array.data[0]
       value: 
-      objectReference: {fileID: 1042059625152400876, guid: 68fcd75592040a04c82df4c81310d092,
+      objectReference: {fileID: 1042059625152400876, guid: f528014b0b17c804b8e2919f5ffa30d5,
         type: 3}
     - target: {fileID: 5545387262163761190, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
         type: 3}
@@ -1567,7 +1567,7 @@ PrefabInstance:
     - target: {fileID: 7891430241606125828, guid: 59e83771e97155b49b4b483bddb5c9f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7891430241606125828, guid: 59e83771e97155b49b4b483bddb5c9f0,
         type: 3}
@@ -1725,6 +1725,18 @@ PrefabInstance:
     - target: {fileID: 1024929380, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: m_text
       value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: prompts.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1123226786, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: m_AnchorMax.x

@@ -1528,6 +1528,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.size
       value: 0
       objectReference: {fileID: 0}

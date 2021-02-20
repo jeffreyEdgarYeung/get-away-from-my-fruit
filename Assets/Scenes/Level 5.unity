@@ -1987,6 +1987,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1996,7 +2004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.data[1]
-      value: You can use your anytime to remove any placed thingy!
+      value: You can use your shovel anytime to remove any placed thingy!
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.data[2]

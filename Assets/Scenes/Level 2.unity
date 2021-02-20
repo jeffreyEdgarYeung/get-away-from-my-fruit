@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: 7341128257999190435, guid: c1e2039092f8f5141aa44f8771a4a82e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7341128257999190435, guid: c1e2039092f8f5141aa44f8771a4a82e,
         type: 3}
@@ -632,7 +632,7 @@ PrefabInstance:
     - target: {fileID: 5545387262163761188, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5545387262163761188, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
         type: 3}
@@ -1530,16 +1530,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: prompts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.data[0]
       value: Select plants from your selection bar.
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.data[1]
-      value: Sunflowers help you get more sun!
+      value: Sunflowers help you get more sun.
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.data[2]
-      value: The more sunflowers, the more thingies you can buy!
+      value: The more sun, the more thingies you can buy!
       objectReference: {fileID: 0}
     - target: {fileID: 1123226786, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: m_AnchorMax.x
