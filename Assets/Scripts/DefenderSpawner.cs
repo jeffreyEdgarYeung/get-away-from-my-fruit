@@ -87,4 +87,9 @@ public class DefenderSpawner : MonoBehaviour
     {
         this.defender = defender;
     }
+
+    public Defender GetDefender()
+    {
+        return this.defender;
+    }
 }

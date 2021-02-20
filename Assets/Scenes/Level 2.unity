@@ -175,6 +175,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &721068087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995505, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_Name
+      value: Pause Button
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 535a20b4d8a15cc49a37d31ceb664937, type: 3}
 --- !u!1001 &1457919947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -185,7 +254,7 @@ PrefabInstance:
     - target: {fileID: 7341128257999190435, guid: c1e2039092f8f5141aa44f8771a4a82e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7341128257999190435, guid: c1e2039092f8f5141aa44f8771a4a82e,
         type: 3}
@@ -600,6 +669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Defender Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 5495112627623622821, guid: 21a6c347801e8db49a435afa9d064b09,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5495112628836293914, guid: 21a6c347801e8db49a435afa9d064b09,
         type: 3}
       propertyPath: m_IsActive
@@ -627,7 +701,7 @@ PrefabInstance:
     - target: {fileID: 5545387262163761188, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5545387262163761188, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
         type: 3}
@@ -692,6 +766,22 @@ PrefabInstance:
     - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
         type: 3}
       propertyPath: winButton
+      value: 
+      objectReference: {fileID: 1042059625152400876, guid: 79050579b1328fb4d83322eef0774823,
+        type: 3}
+    - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
+        type: 3}
+      propertyPath: finalWaveVolume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
+        type: 3}
+      propertyPath: winButtons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
+        type: 3}
+      propertyPath: winButtons.Array.data[0]
       value: 
       objectReference: {fileID: 1042059625152400876, guid: 79050579b1328fb4d83322eef0774823,
         type: 3}
@@ -1497,6 +1587,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 325804598, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -658.34296
+      objectReference: {fileID: 0}
     - target: {fileID: 325804601, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: sun
       value: 50
@@ -1510,16 +1604,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: prompts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.data[0]
       value: Select plants from your selection bar.
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.data[1]
-      value: Sunflowers help you get more sun!
+      value: Sunflowers help you get more sun.
       objectReference: {fileID: 0}
     - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: prompts.Array.data[2]
-      value: The more sunflowers, the more thingies you can buy!
+      value: The more sun, the more thingies you can buy!
       objectReference: {fileID: 0}
     - target: {fileID: 1123226786, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1556,6 +1662,16 @@ PrefabInstance:
     - target: {fileID: 3488362974199945666, guid: 636f861f1f384ff41900c3792ade4527,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556197386916440527, guid: 636f861f1f384ff41900c3792ade4527,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556197386916440527, guid: 636f861f1f384ff41900c3792ade4527,
+        type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8575220987174171466, guid: 636f861f1f384ff41900c3792ade4527,

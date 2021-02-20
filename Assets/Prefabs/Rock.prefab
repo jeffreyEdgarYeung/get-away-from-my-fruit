@@ -68,6 +68,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunCost: 50
+  shovel: {fileID: 9139538309434107545, guid: 1d543c6a3a833464aad0683dc4222741, type: 3}
+  fieldCursor: {fileID: 2606999833381631185, guid: 732ce0ac9430abb4cad5377f8b047e25,
+    type: 3}
 --- !u!61 &5963797411892487521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -78,10 +81,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0024827719, y: 0.032476187}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -92,7 +95,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0044477, y: 0.99543524}
+  m_Size: {x: 1.15, y: 1.15}
   m_EdgeRadius: 0
 --- !u!114 &3308840113557118396
 MonoBehaviour:

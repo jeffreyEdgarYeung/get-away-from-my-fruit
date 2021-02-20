@@ -6,7 +6,7 @@ public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject loseMenu;
-    [SerializeField] GameObject winButton;
+    [SerializeField] GameObject[] winButtons;
 
     [Header("SFX")]
     [SerializeField] AudioClip pauseSFX;
@@ -36,7 +36,10 @@ public class LevelController : MonoBehaviour
         numAttackers--;
         if(numAttackers == 0 && timerFinished)
         {
-            Instantiate(winButton, attackerPos, Quaternion.identity);
+            foreach(GameObject winButton in winButtons)
+            {
+                Instantiate(winButton, attackerPos, Quaternion.identity);
+            }
         }
     }
 

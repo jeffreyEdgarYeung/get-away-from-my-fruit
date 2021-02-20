@@ -8,6 +8,7 @@ public class PromptController : MonoBehaviour
     [SerializeField] string[] prompts;
     [SerializeField] float initPromptDelay = 0f;
     [SerializeField] float promptDuration = 5f;
+    [SerializeField] Vector3 promptLocation;
 
     [SerializeField] GameObject promptPrefab;
     [SerializeField] GameObject finalWavePrompt;
@@ -38,7 +39,7 @@ public class PromptController : MonoBehaviour
             GameObject newPrompt = Instantiate
             (
                 promptPrefab,
-                new Vector3(5f, 1.5f, 0),
+                promptLocation,
                 Quaternion.identity
             ) as GameObject;
 

@@ -529,6 +529,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178b3a58fda252c43b43078ab513e20d, type: 3}
+--- !u!1001 &4780598943222591551
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995501, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780598944449995505, guid: 535a20b4d8a15cc49a37d31ceb664937,
+        type: 3}
+      propertyPath: m_Name
+      value: Pause Button
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 535a20b4d8a15cc49a37d31ceb664937, type: 3}
 --- !u!1001 &5495112628879064574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -599,6 +668,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Defender Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495112627623622821, guid: 21a6c347801e8db49a435afa9d064b09,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5495112628513815934, guid: 21a6c347801e8db49a435afa9d064b09,
         type: 3}
@@ -694,6 +768,22 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1719203522}
+    - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
+        type: 3}
+      propertyPath: finalWaveVolume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
+        type: 3}
+      propertyPath: winButtons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545387262163761189, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
+        type: 3}
+      propertyPath: winButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1042059625152400876, guid: 3847e5d79b6e5604a8aeb7678ee201f6,
+        type: 3}
     - target: {fileID: 5545387262163761190, guid: c6c0d363bcd5dd242912ec29ddf5c71c,
         type: 3}
       propertyPath: m_Name
@@ -1355,6 +1445,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 325804598, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -658.3403
+      objectReference: {fileID: 0}
+    - target: {fileID: 325804601, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: sun
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 639444689, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1362,6 +1460,30 @@ PrefabInstance:
     - target: {fileID: 1024929378, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: promptLocation.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: prompts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: prompts.Array.data[0]
+      value: Click on the grass to place a selected thingy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: prompts.Array.data[1]
+      value: Collect falling sun to buy more thingies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040474729, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: prompts.Array.data[2]
+      value: Stop the savage animals from eating your fruit!
       objectReference: {fileID: 0}
     - target: {fileID: 1123226786, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1391,6 +1513,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1929769566, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -657.20703
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047826665, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
+      propertyPath: levelTime
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2144818067, guid: 636f861f1f384ff41900c3792ade4527, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1398,6 +1528,11 @@ PrefabInstance:
     - target: {fileID: 3488362974199945666, guid: 636f861f1f384ff41900c3792ade4527,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556197386916440527, guid: 636f861f1f384ff41900c3792ade4527,
+        type: 3}
+      propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8575220987174171466, guid: 636f861f1f384ff41900c3792ade4527,

@@ -68,7 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 125
   explosionSFX: {fileID: 8300000, guid: 4df75ab6f07a2f545a633428bd4596d0, type: 3}
-  explosionVolume: 0.25
+  explosionVolume: 0.35
 --- !u!50 &1553955668596159284
 Rigidbody2D:
   serializedVersion: 4

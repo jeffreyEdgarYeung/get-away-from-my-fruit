@@ -11,11 +11,14 @@ public class Fruit : MonoBehaviour
       
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        FindObjectOfType<MusicPlayer>().StopMusic();
-        Time.timeScale = 0f;
-        barrier.SetActive(true);
-        AudioSource.PlayClipAtPoint(loseSFX, Camera.main.transform.position, loseVolume);
-        StartCoroutine(FindObjectOfType<LevelController>().LoadGameOver(loseSFX.length));
+        if (collision.GetComponent<Attacker>())
+        {
+            FindObjectOfType<MusicPlayer>().StopMusic();
+            Time.timeScale = 0f;
+            barrier.SetActive(true);
+            AudioSource.PlayClipAtPoint(loseSFX, Camera.main.transform.position, loseVolume);
+            StartCoroutine(FindObjectOfType<LevelController>().LoadGameOver(loseSFX.length));
+        }
        
     }
 }
